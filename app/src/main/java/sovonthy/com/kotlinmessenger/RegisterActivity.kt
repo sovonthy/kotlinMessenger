@@ -71,8 +71,8 @@ class RegisterActivity : AppCompatActivity() {
             return
         }
 
-        Log.d("RegisterActivity", "Email is: " + email)
-        Log.d("RegisterActivity","Password is: "+ password)
+        Log.d(TAG, "Email is: " + email)
+        Log.d(TAG,"Password is: "+ password)
 
         //Firebase authentication to create a user with email and password
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password)
